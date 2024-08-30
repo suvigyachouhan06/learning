@@ -57,9 +57,10 @@ app.get("/users",async (req,res)=>{
     `;
     res.send(html);
 })
-app.get("/api/users/:id",(req,res)=>{
-    const id=Number(req.params.id);
-    const user=users.find((user)=>user.id===id);
+app.get("/api/users/:id", async (req,res)=>{
+    
+    const user= await User.findById(req.params.id);
+    if (!user) return res.status(404).json({error: "user not found"})
     return res.json(user);
 })
 
