@@ -19,3 +19,15 @@
 1724667438658 : /favicon.ico New Request Received 
 1724667446078 : /search?search_result=suvigya New Request Received 
 1724667446111 : /favicon.ico New Request Received 
+
+ 1725253936902: ::1 / PATCH
+
+ 1725253948044: ::1 / POST
+
+ 1725254020901: ::1 / POST
+
+ 1725254021981: ::1 / POST
+
+ 1725254072321: ::1 /user POST
+
+ 1725254123899: ::1 /user GET
